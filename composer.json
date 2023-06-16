@@ -1,18 +1,18 @@
 {
-    "name": "wordpresstheme/hollowtheme",
-    "description": "WordPress Hollow theme",
-    "type": "wordpress-theme",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Wordpresstheme\\Hollowtheme\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Sarah Siqueira",
-            "email": "sarahcosiqueira@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "wordpresstheme/basetheme",
+  "description": "WordPress Base theme",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Wordpresstheme\\Basetheme\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Sarah Siqueira",
+      "email": "sarahcosiqueira@gmail.com"
+    }
+  ],
+  "require": {}
 }
