@@ -68,3 +68,34 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+
+    - name: Use desired version of NodeJS
+      uses: actions/setup-node@v2
+      with:
+          node-version: ${{ matrix.node }}
+
+    - name: Cache NPM packages
+      uses: actions/cache@v2
+      with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.node }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        coverage: none
+        tools: composer
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-suggest --no-progress && npm install
+
+    - name: PHPCS check
+      if: always()
+      uses: chekalsky/phpcs-action@v1
+      with:
+        phpcs_bin_path: './vendor/bin/phpcs -d memory_limit=140M'
+
+    - name: "Static Analysis"
+      if: always()
+      run: composer run psalm
