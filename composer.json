@@ -1,18 +1,21 @@
 {
-  "name": "wordpresstheme/basetheme",
-  "description": "WordPress Base theme",
+  "name": "wordpresstheme/base-theme",
+  "description": "Base WordPress theme",
   "type": "wordpress-theme",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Wordpresstheme\\Basetheme\\": "src/"
+      "Basetheme\\": "/"
     }
   },
   "authors": [
     {
-      "name": "Sarah Siqueira",
+      "name": "sarahcssiqueira",
       "email": "sarahcosiqueira@gmail.com"
     }
   ],
-  "require": {}
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^2.3"
+  }
 }

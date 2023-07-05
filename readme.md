@@ -1,6 +1,6 @@
 # Base Theme
 
-Base Theme is a starter WordPress theme, clean and minimalist to use as a base to build websites for clients or to build completely custom themes from scratch.
+Base Theme is a starter WordPress theme, clean and minimalist to use as a base to build websites for clients or to build themes from scratch.
 
 ## Table of Contents
 
