@@ -4,6 +4,7 @@
 
 const path = require('path');
 const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
+const { CleanWebpackPlugin } = require( "clean-webpack-plugin" );
 
 const JS_DIR = path.resolve(__dirname, '/src/js' );
 const BUILD_DIR = path.resolve(__dirname, 'build');
@@ -16,6 +17,20 @@ const output = {
     path: BUILD_DIR,
     filename: 'js/[name].js'
 };
+
+const plugins = (argv) => [
+    new CleanWebpackPlugin(
+        {
+            cleanStaleWebpackAssets: "production" === argv.mode,
+        }
+    ),
+    new MiniCssExtractPlugin(
+        {
+            filename: "css/[name].css",
+        }
+    ),
+    
+];
 
 const rules = [
     {
@@ -56,8 +71,14 @@ module.exports = (env, argv) => ({
     entry: entry,
     output: output,
     devtool: 'source-map',
+
     module: {
         rules: rules,
-    }
+    },
 
+    plugins: plugins( argv ),
+
+    externals: {
+        jquery: "jQuery",
+    },
 });
