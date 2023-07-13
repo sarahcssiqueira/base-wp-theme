@@ -4,7 +4,9 @@
   "description": "Base Theme is a starter WordPress theme, clean and minimalist to use as a base to build websites for clients or to build themes from scratch.",
   "main": "src/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
+    "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
+    "clean": "rm -rf build/*"
   },
   "keywords": [
     "wordpress",
