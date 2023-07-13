@@ -2,7 +2,7 @@
   "name": "base-theme",
   "version": "1.0.0",
   "description": "Base Theme is a starter WordPress theme, clean and minimalist to use as a base to build websites for clients or to build themes from scratch.",
-  "main": "src/js/index.js",
+  "main": "build/js/index.js",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
@@ -16,7 +16,7 @@
   "author": "sarahcssiqueira",
   "license": "GPLv2 or later",
   "browserslist": [
-    "default"
+    "defaults"
   ],
   "devDependencies": {
     "@babel/core": "^7.22.5",
@@ -30,10 +30,6 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
-    "cssnano": "^6.0.1",
-    "eslint": "^7.32.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-jsdoc": "^46.2.6",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^9.0.0",
@@ -42,9 +38,6 @@
     "sass-mq": "^6.0.0",
     "style-loader": "^3.3.3",
     "stylelint": "^15.10.1",
-    "stylelint-config-standard-scss": "^9.0.0",
-    "stylelint-config-wordpress": "^17.0.0",
-    "stylelint-webpack-plugin": "^4.1.1",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.86.0",
     "webpack-cli": "^5.1.4"

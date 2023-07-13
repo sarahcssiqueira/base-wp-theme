@@ -4,9 +4,12 @@
 
 const path = require('path');
 const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
+const CssMinimizerPlugin = require( "css-minimizer-webpack-plugin" );
+const TerserJsPlugin = require( "terser-webpack-plugin" );
 const { CleanWebpackPlugin } = require( "clean-webpack-plugin" );
 
-const JS_DIR = path.resolve(__dirname, '/src/js' );
+const JS_DIR = path.resolve(__dirname, 'src/js' );
+const IMG_DIR = path.resolve(__dirname, 'src/img' );
 const BUILD_DIR = path.resolve(__dirname, 'build');
 
 const entry = {
@@ -74,6 +77,11 @@ module.exports = (env, argv) => ({
 
     module: {
         rules: rules,
+    },
+
+    optimization: {
+        minimizer: [new CssMinimizerPlugin(), new TerserJsPlugin()],
+        minimize: true,
     },
 
     plugins: plugins( argv ),
