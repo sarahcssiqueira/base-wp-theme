@@ -6,8 +6,8 @@
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
-    "lint": "eslint src/js/*",
-    "lint:fix": "eslint --fix src/js/*",
+    "lint": "eslint assets/js/*",
+    "lint:fix": "eslint --fix assets/js/*",
     "lint-css": "stylelint **/*.scss",
     "lint-css:fix": "stylelint **/*.scss --fix",
     "build": "npm run lint-css:fix && npm run lint:fix && npm run prod"

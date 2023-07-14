@@ -8,8 +8,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserJsPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const JS_DIR = path.resolve(__dirname, "src/js");
-const IMG_DIR = path.resolve(__dirname, "src/img");
+const JS_DIR = path.resolve(__dirname, "assets/js");
+const IMG_DIR = path.resolve(__dirname, "assets/img");
 const BUILD_DIR = path.resolve(__dirname, "build");
 
 const entry = {
