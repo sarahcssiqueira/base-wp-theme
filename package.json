@@ -1,7 +1,7 @@
 {
-  "name": "base-theme",
+  "name": "base-wp-theme",
   "version": "1.0.0",
-  "description": "Base Theme is a starter WordPress theme, clean and minimalist to use as a base to build websites for clients or to build themes from scratch.",
+  "description": "Skeleton WordPress theme to use as a base to build WordPress themes from scratch.",
   "main": "build/js/index.js",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",

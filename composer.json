@@ -1,11 +1,11 @@
 {
-  "name": "wordpresstheme/base-theme",
-  "description": "Base WordPress theme",
+  "name": "sarahcssiqueira/base-wp-theme",
+  "description": "Skeleton WordPress theme to use as a base to build WordPress themes from scratch.",
   "type": "wordpress-theme",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Basetheme\\": "/"
+      "BaseWPtheme\\": "/"
     }
   },
   "authors": [
