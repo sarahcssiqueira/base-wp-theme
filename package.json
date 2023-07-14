@@ -9,7 +9,8 @@
     "lint": "eslint src/js/*",
     "lint:fix": "eslint --fix src/js/*",
     "lint-css": "stylelint **/*.scss",
-    "lint-css:fix": "stylelint **/*.scss --fix"
+    "lint-css:fix": "stylelint **/*.scss --fix",
+    "build": "npm run lint-css:fix && npm run lint:fix && npm run prod"
   },
   "keywords": [
     "wordpress",
@@ -22,6 +23,10 @@
     "defaults"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
     "@wordpress/eslint-plugin": "^14.10.0",
     "@wordpress/stylelint-config": "^21.20.0",
     "babel-loader": "^9.1.2",
