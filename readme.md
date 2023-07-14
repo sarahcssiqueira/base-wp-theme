@@ -20,11 +20,27 @@ Clone the repository `git clone https://github.com/sarahcssiqueira/base-wp-theme
 
 `composer install`
 
+run
+
+`composer cstd`
+
 ## 📁 Folders Structure
 
 ### WordPress Hierarchy
 
-root folder the php files
+On project's root folder the php files. You can create others, please refer to [documentation](https://developer.wordpress.org/themes/basics/template-hierarchy/)
+
+- index.php
+- page.php
+- privacy-policy.php
+- single.php
+- category.php
+- tag.php
+- author.php
+- archive.php
+- search.php
+- 404.php
+- attachment.php
 
 ### Assets
 
