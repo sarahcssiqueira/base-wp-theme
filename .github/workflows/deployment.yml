@@ -37,10 +37,8 @@ jobs:
           --exclude /deploy_key \
           --exclude /.git/ \
           --exclude /.github/ \
-          --exclude /assets/ \
           --exclude /node_modules/ \
-          --exclude /vendor/ \
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
         env:
           SSH_HOST: digitalocean
-          DEST: "/var/www/base-wp-theme.sarahjobs.com/wp-content/themes/base-wp-theme"
+          DEST: "/var/www/base-wp-theme/wp-content/themes/base-wp-theme"

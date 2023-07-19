@@ -25,7 +25,7 @@ if ( ! defined( 'BASEWPTHEME_DIR_URI' ) ) {
 /*
  * Require autoload
  */
-require_once __DIR__ . '/vendor/autoload.php';
+require_once BASEWPTHEME_DIR_PATH . '/vendor/autoload.php';
 
 /*
 * Enqueue Styles and Scripts
