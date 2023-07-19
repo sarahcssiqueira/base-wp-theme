@@ -1,0 +1,46 @@
+name: Deploy Theme
+
+on:
+  push:
+    branches: [master]
+
+env:
+  SSH_USER: ${{ secrets.SSH_USER }}
+  SSH_HOST: ${{ secrets.SSH_HOST }}
+
+jobs:
+  deploy:
+    name: Deploy WordPress Theme on Digital Ocean
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set SSH Connection
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/deploy.key
+          chmod 600 ~/.ssh/deploy.key
+          cat >>~/.ssh/config <<END
+          Host digitalocean
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/deploy.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Sync theme files
+        run: "rsync --delete -avO
+          --exclude /deploy_key \
+          --exclude /.git/ \
+          --exclude /.github/ \
+          --exclude /assets/ \
+          --exclude /node_modules/ \
+          --exclude /vendor/ \
+          ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
+        env:
+          SSH_HOST: digitalocean
+          DEST: "/var/www/base-wp-theme.sarahjobs.com/wp-content/themes/base-wp-theme"
