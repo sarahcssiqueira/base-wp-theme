@@ -23,11 +23,8 @@ if ( ! defined( 'BASEWPTHEME_DIR_URI' ) ) {
 }
 
 /*
- * Require autoload
- */
-require_once BASEWPTHEME_DIR_PATH . '/vendor/autoload.php';
-
-/*
 * Enqueue Styles and Scripts
 */
+require_once BASEWPTHEME_DIR_PATH . '/inc/classes/class-assets.php';
+
 new BaseWpTheme\Inc\Classes\Assets();
