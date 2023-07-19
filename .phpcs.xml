@@ -14,9 +14,12 @@
 
     <rule ref="WordPress">
         <!-- PSR4 -->
-        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
-        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+        <exclude name="WordPress.Files.FileName" />
     </rule>
+
+    <rule ref="WordPress-Extra"/>
+
+    <rule ref="WordPress-Docs"/>
 
 
     <rule ref="Generic.Metrics.CyclomaticComplexity">

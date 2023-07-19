@@ -1,0 +1,45 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    font-family: 'Inter', sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.title {
+    color:#4d5cf1;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.desc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+	display: inline-block;
+	background-color:#4d5cf1;
+	color: white;
+	border: 1px solid white;
+	border-radius: 0;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 500;
+	&:hover{
+		cursor: pointer;
+		background-color: white;
+		color: #4d5cf1;
+		border: 1px solid #4d5cf1;
+	}
+}
+
+.link {
+    color: #0eb1b1;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
