@@ -39,6 +39,19 @@ jobs:
           --exclude /.git/ \
           --exclude /.github/ \
           --exclude /node_modules/ \
+          --exclude /vendor/ \
+          --exclude .babelrc \
+          --exclude .eslintrc.json \
+          --exclude .gitignore \
+          --exclude .phpcs.xml \
+          --exclude .stylelintrc.json \
+          --exclude CHANGELOG.md \
+          --exclude composer.json \
+          --exclude composer.lock \
+          --exclude package.json \
+          --exclude package-lock.json \
+          --exclude README.md \
+          --exclude webpack.config.js \
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
         env:
           SSH_HOST: digitalocean
