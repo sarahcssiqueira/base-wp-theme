@@ -1,10 +1,11 @@
 # Base WP Theme
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![PluginTerritory](https://img.shields.io/badge/Plugin%20Territory-Free-blue.svg?logo=wordpress&logoColor=FAFAFA)]()
 
 Base WP Theme is a **skeleton** WordPress theme to use as a base to build WordPress themes from scratch.
 
-Contains the configurations files for handling assets like Javascript files , CSS files, images and also handle WordPress Coding Standards and Autoload through composer.
+Contains the configurations files for handling assets like Javascript files, CSS files, images and also handle WordPress Coding Standards and Autoload through composer.
 
 - Webpack;
 - Eslint;
@@ -18,10 +19,10 @@ Contains the configurations files for handling assets like Javascript files , CS
 - [Introduction](#base-wp-theme)
 - Requirements
 - [Usage](#usage)
-  - Folders Structure
-    - WordPress Hierarchy
-    - Assets
-    - Build
+- Folders Structure
+  - WordPress Hierarchy
+  - Assets
+  - Build
 - [Contributing and Support](#contributing-and-support)
 
 ## Usage
@@ -36,7 +37,8 @@ run
 
 ### Reset the theme
 
-Remove the front-page and create your own, you can use the front-page-sample.php
+Remove the front-page.php and create your own, you can use the front-page-sample.php. Also remove the front-page.scss partial.
+Remove the line /'.front-page of the
 
 ### 📁 Folders Structure
 
