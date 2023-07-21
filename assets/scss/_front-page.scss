@@ -4,12 +4,12 @@
     align-items: center;
     text-align: center;
     padding: 5rem;
-    font-family: 'Inter', sans-serif;
-    color: rgb(51, 51, 51);
+    font-family: Inter, sans-serif;
+    color: #333;
 }
 
 .title {
-    color:#4d5cf1;
+    color: #4d5cf1;
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -20,22 +20,23 @@
 }
 
 .button {
-	display: inline-block;
-	background-color:#4d5cf1;
-	color: white;
-	border: 1px solid white;
-	border-radius: 0;
-	margin-right: 15px;
-	margin-bottom: 15px;
-	padding: 10px 20px;
-	font-size: 16px;
-	font-weight: 500;
-	&:hover{
-		cursor: pointer;
-		background-color: white;
-		color: #4d5cf1;
-		border: 1px solid #4d5cf1;
-	}
+    display: inline-block;
+    background-color: #4d5cf1;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #4d5cf1;
+        border: 1px solid #4d5cf1;
+    }
 }
 
 .link {
