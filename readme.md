@@ -1,16 +1,19 @@
 # Base WP Theme
 
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![PluginTerritory](https://img.shields.io/badge/Plugin%20Territory-Free-blue.svg?logo=wordpress&logoColor=FAFAFA)]()
+[![ThemeTerritory](https://img.shields.io/badge/Theme%20Territory-Free-blue.svg?logo=wordpress)]()
+[![Deploy](https://github.com/sarahcssiqueira/base-wp-theme/actions/workflows/deployment.yml/badge.svg)](https://github.com/sarahcssiqueira/base-wp-theme/actions/workflows/deployment.yml)
+[![Release Version](https://img.shields.io/github/release/sarahcssiqueira/base-wp-theme.svg?color)](https://github.com/sarahcssiqueira/base-wp-theme/releases/latest)
 
-> The `develop` branch tracks development and it's not a stable code. For a stable version, use the [`master`](https://github.com/sarahcssiqueira/base-wp-theme/tree/master) branch the latest [release](https://github.com/sarahcssiqueira/base-wp-theme/releases).
+> The `develop` branch tracks development and it's not a stable code. For a stable version, use the [`master`](https://github.com/sarahcssiqueira/base-wp-theme/tree/master) branch or the latest [release](https://github.com/sarahcssiqueira/base-wp-theme/releases).
 
 Base WP Theme is a **starter** WordPress theme to use as a base to build WordPress themes from scratch.
 
-Contains the configuration files for handling the assets files like Javascript, CSS, and images using [Webpack](https://webpack.js.org/) and also handles [WordPress Coding Standards](https://github.com/WordPress/WordPress-Coding-Standards) through [Composer](https://getcomposer.org/). Some topics:
+Contains the configuration files for handling the assets files like Javascript, CSS, and images using [Webpack](https://webpack.js.org/) and also handles [WordPress Coding Standards](https://github.com/WordPress/WordPress-Coding-Standards) through [Composer](https://getcomposer.org/). Some topics covered in the project:
 
 - [Webpack](https://webpack.js.org/) for managing, compiling, and optimizing the theme's asset files;
-- [ES6](https://babeljs.io/learn-es2015/) for JavaScript;
+- [ES6](https://babeljs.io/learn-es2015/);
 - [Eslint](https://eslint.org/);
 - [Babel](https://babeljs.io/);
 - [SASS](http://sass-lang.com/);
@@ -55,9 +58,7 @@ For WordPress local development, I **strongly recommend using Docker**. To see h
 Clone the repository with `git clone https://github.com/sarahcssiqueira/base-wp-theme` or download one of the latest [releases](https://github.com/sarahcssiqueira/base-wp-theme/releases). Paste in the **/wp-content/themes/** folder of your WordPress installation.
 On the Base WP Theme root folder, run the following commands to install the required dependencies:
 
-`npm install` &&
-
-`composer install`
+`npm install && composer install`
 
 To use WPCS, we have to tell the PHP Code Sniffer about the WordPress Coding Standards. For that run the command:
 
@@ -127,13 +128,13 @@ The assets on the **build folder** are the ones enqueued on the **class-assets.p
 ## Deploy
 
 The **Base WP Theme** is deployed in a [LAMP server on Digital Ocean](https://dev.to/sarahcssiqueira/setting-a-lamp-server-on-digital-ocean-ssl-55l0). The deployment is handled by GitHub Actions.
-Update the [.github/worfklow/deployment.yml](https://github.com/sarahcssiqueira/base-wp-theme/blob/master/.github/workflows/deployment.yml) file according to your deployment needs.
+Update or replace the [.github/worfklow/deployment.yml](https://github.com/sarahcssiqueira/base-wp-theme/blob/master/.github/workflows/deployment.yml) file according to your deployment needs.
 
-In the Base WP Theme case, the deployment **workflow is triggered** when a **new tag** is added to the master branch, so the **deployed version** will always correspond to the [latest release](https://github.com/sarahcssiqueira/base-wp-theme/releases/latest) version.
+In the **Base WP Theme**, the deployment **workflow is triggered** when a **new tag** is added to the master branch, so the **deployed version** will always correspond to the [latest release](https://github.com/sarahcssiqueira/base-wp-theme/releases/latest) version.
 
 You can set the trigger for your workflow on push, on pull requests, on issues opened, etc. Please refer to [GitHub documentation](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#about-workflow-triggers) for more details.
 
-More for workflow samples go to [Reusable WordPress Workflows repository](https://github.com/sarahcssiqueira/reusable-wordpress-workflows).
+For more workflows samples go to [Reusable WordPress Workflows repository](https://github.com/sarahcssiqueira/reusable-wp-workflows).
 
 ## 🤝 Contributing and Support
 
@@ -143,7 +144,7 @@ Contribute informing about [issues](https://github.com/sarahcssiqueira/base-wp-t
 
 ## Changelog 📄
 
-[Changelog here](https://github.com/sarahcssiqueira/base-wp-theme/blob/main/CHANGELOG.md)
+All changes to this project are documented in [CHANGELOG](https://github.com/sarahcssiqueira/base-wp-theme/blob/main/CHANGELOG.md)
 
 ## License
 
