@@ -13,6 +13,7 @@ jobs:
   deploy:
     name: Deploy WordPress Theme on Digital Ocean
     runs-on: ubuntu-20.04
+    environment: production
 
     steps:
       - name: Checkout

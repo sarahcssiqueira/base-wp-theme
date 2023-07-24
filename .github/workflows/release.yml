@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  release:
+    name: Create Release on Tag
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          body: "For changes in this release, see the changelog:"
+          generateReleaseNotes: true
