@@ -46,7 +46,12 @@
     "stylelint-config-standard-scss": "^10.0.0",
     "stylelint-webpack-plugin": "^4.1.1",
     "terser-webpack-plugin": "^5.3.9",
-    "webpack": "^5.86.0",
+    "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "overrides": {
+    "@wordpress/stylelint-config": {
+      "stylelint": "^15.10.1"
+        }
+    }  
 }
