@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primary", "color": "#0073aa", "name": "Primary" },
+        { "slug": "secondary", "color": "#005177", "name": "Secondary" }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug": "small", "size": "14px", "name": "Pequeno" },
+        { "slug": "large", "size": "36px", "name": "Grande" }
+      ]
+    },
+    "spacing": {
+      "units": [ "px", "em", "rem", "%" ]
+    }
+  }
+}
