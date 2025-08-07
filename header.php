@@ -12,3 +12,6 @@
 
 	<?php wp_head(); ?>
 </head>
+<body>
+	<a href="#main" class="skip-link screen-reader-text">Pular para o conteúdo principal</a>
+</body>
