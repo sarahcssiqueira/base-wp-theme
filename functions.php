@@ -14,17 +14,12 @@
 /*
  * Define path constants
  */
-if ( ! defined( 'BASEWPTHEME_DIR_PATH' ) ) {
-	define( 'BASEWPTHEME_DIR_PATH', untrailingslashit( get_template_directory() ) );
+function theme_enqueue_assets() {
+    // CSS compilado
+    wp_enqueue_style('theme-style', get_template_directory_uri() . '/dist/css/style.min.css', [], null);
+    
+    // JS compilado
+    wp_enqueue_script('theme-script', get_template_directory_uri() . '/dist/js/main.min.js', [], null, true);
 }
+add_action('wp_enqueue_scripts', 'theme_enqueue_assets');
 
-if ( ! defined( 'BASEWPTHEME_DIR_URI' ) ) {
-	define( 'BASEWPTHEME_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
-}
-
-/*
-* Enqueue Styles and Scripts
-*/
-require_once BASEWPTHEME_DIR_PATH . '/inc/classes/class-assets.php';
-
-new BaseWpTheme\Inc\Classes\Assets();
