@@ -24,7 +24,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.22.9",
-    "@babel/core": "^7.22.9",
+    "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@wordpress/eslint-plugin": "^14.10.0",
