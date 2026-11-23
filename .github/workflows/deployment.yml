@@ -12,12 +12,12 @@ env:
 jobs:
   deploy:
     name: Deploy WordPress Theme on Digital Ocean
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     environment: production
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set SSH Connection
         run: |
