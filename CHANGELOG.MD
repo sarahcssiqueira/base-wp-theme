@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.4](https://github.com/sarahcssiqueira/base-wp-theme/releases/tag/v1.0.4) - 2026/11/22
+
+### Security
+
+- Updated npm and Composer development dependencies to fix known vulnerabilities (e.g. `serialize-javascript`, `flatted`, `svgo`, `webpack`).
+- Updated `wp-coding-standards/wpcs` to 3.x, `copy-webpack-plugin` to 14.x and `css-minimizer-webpack-plugin` to 8.x.
+
+### Minor Fix
+
+- Theme version on style.css
+
+## [1.0.3](https://github.com/sarahcssiqueira/base-wp-theme/releases/tag/v1.0.3) - 2024/07/25
+
+### Fixed
+
+- Dependencies conflict.
+
 ## [1.0.2](https://github.com/sarahcssiqueira/base-wp-theme/releases/tag/v1.0.2) - 2023/07/31
 
 ### Added
