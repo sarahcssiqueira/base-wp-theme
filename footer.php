@@ -3,7 +3,7 @@
  *
  * The template for displaying the footer.
  *
- * @package dentist_theme
+ * @package BaseWPTheme
  *
  * Contains the closing of the #content div and all content after.
  *

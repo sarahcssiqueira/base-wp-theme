@@ -40,9 +40,9 @@ Contains the configuration files for handling the assets files like Javascript, 
 
 Base WP Theme follows [WordPress recommended requirements](https://wordpress.org/about/requirements/). To work on this project you will need:
 
-- WordPress >= 4.7
-- PHP >= 7.4
-- MySQL >= 5.7 or MariaDB >=10.3
+- WordPress >= 6.6 (tested up to 6.9)
+- PHP >= 8.2 (tested on 8.2, 8.3 and 8.4)
+- MySQL >= 8.0 or MariaDB >= 10.6
 - Nginx or Apache with mod_rewrite module
 - HTTPS support
 
@@ -64,7 +64,7 @@ To use WPCS, we have to tell the PHP Code Sniffer about the WordPress Coding Sta
 
 `composer cstd`
 
-### Reseting the theme
+### Resetting the theme
 
 Remove the front-page.php and create your own, you can use the front-page-sample.php present in the root folder. Also, remove the front-page.scss partial. Remove the statement '/.front-page' of the index.scss file.
 
@@ -128,7 +128,7 @@ The assets on the **build folder** are the ones enqueued on the **class-assets.p
 ## Deploy
 
 The **Base WP Theme** is deployed in a [LAMP server on Digital Ocean](https://dev.to/sarahcssiqueira/setting-a-lamp-server-on-digital-ocean-ssl-55l0). The deployment is handled by GitHub Actions.
-Update or replace the [.github/worfklow/deployment.yml](https://github.com/sarahcssiqueira/base-wp-theme/blob/master/.github/workflows/deployment.yml) file according to your deployment needs.
+Update or replace the [.github/workflows/deployment.yml](https://github.com/sarahcssiqueira/base-wp-theme/blob/master/.github/workflows/deployment.yml) file according to your deployment needs.
 
 In the **Base WP Theme**, the deployment **workflow is triggered** when a **new tag** is added to the master branch, so the **deployed version** will always correspond to the [latest release](https://github.com/sarahcssiqueira/base-wp-theme/releases/latest) version.
 
@@ -144,7 +144,7 @@ Contribute informing about [issues](https://github.com/sarahcssiqueira/base-wp-t
 
 ## Changelog 📄
 
-All changes to this project are documented in [CHANGELOG](https://github.com/sarahcssiqueira/base-wp-theme/blob/main/CHANGELOG.md)
+All changes to this project are documented in [CHANGELOG](https://github.com/sarahcssiqueira/base-wp-theme/blob/master/CHANGELOG.MD)
 
 ## License
 
